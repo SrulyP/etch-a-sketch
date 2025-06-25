@@ -1,0 +1,27 @@
+html {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: solid 2px green;
+}
+
+.options {
+    border: solid 2px blue;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px orange;
+    width: 320px;
+    height: 320px;
+}
+
+.grid-piece {
+    
+}
