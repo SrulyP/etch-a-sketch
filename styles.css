@@ -1,27 +1,56 @@
-html {
+html, body {
     display: flex;
     flex: 1;
     flex-direction: column;
     margin: 0;
     padding: 0;
+    background-color: #494949;
 }
+
+
+h1 {
+    text-align: center;
+    color:#FFFBDE;
+    text-shadow: 2px 2px #040404;
+}
+
 
 .container {
-    border: solid 2px green;
+    border-top: solid 5px #4682A9;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
 }
 
-.options {
-    border: solid 2px blue;
-}
 
 .grid {
     display: flex;
     flex-wrap: wrap;
-    border: solid 2px orange;
-    width: 320px;
-    height: 320px;
+    border: 5px outset #91C8E4;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(236, 246, 255);
+
 }
 
-.grid-piece {
-    
+
+Button {
+    padding: 5px 12px;
+	margin: 5px;
+	border-radius: 10px;
+	color: #FFFBDE;
+    background-color: #749BC2;
+	font-weight: bold;
+}
+
+
+Button:hover {
+	background-color: #91C8E4;
+	transition: 0.1s;
+}
+
+Button:active {
+	background-color: #4682A9;
 }
