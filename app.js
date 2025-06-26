@@ -75,7 +75,7 @@ function resetGrid(value){
             gridPiece.setAttribute("style", styles);
             gridPiece.addEventListener('mouseover', () => {
                 if (mode == "gray") {
-                    increaseOpacity(gridPiece);
+                    gridPiece.style.backgroundColor = 'black';
                 }
                 else {
                     randomColors(gridPiece);
@@ -86,16 +86,6 @@ function resetGrid(value){
     }
 }
 resetGrid(value);
-
-
-// ----------------- Increase Opacity Function -----------------
-
-function increaseOpacity(gridPiece) {
-    gridPiece.style.backgroundColor = "#000000";
-    gridPiece.style.opacity = 0;
-    let opacity = parseFloat(gridPiece.style.opacity);
-    gridPiece.style.opacity = opacity + 0.1;
-}
 
 
 // ----------------- Random Colors Function -----------------
