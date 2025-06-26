@@ -7,6 +7,9 @@ html, body {
     background-color: #494949;
 }
 
+header {
+    background-color: #466a83;
+}
 
 h1 {
     text-align: center;
@@ -54,3 +57,4 @@ Button:hover {
 Button:active {
 	background-color: #4682A9;
 }
+
