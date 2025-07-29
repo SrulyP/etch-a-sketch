@@ -29,10 +29,11 @@ header {
 h1 {
     text-align: center;
     color: var(--alabaster);
+    letter-spacing: 0.5rem;
 }
 
 .container {
-    border-top: solid 1px var(--cadet-gray);
+    border-top: solid 2px var(--cadet-gray);
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -63,6 +64,8 @@ button {
     cursor: pointer;
     box-shadow: 0 2px 6px var(--btn-shadow);
     transition: 0.2s ease;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
 }
 
 button:hover {
