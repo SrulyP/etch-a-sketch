@@ -1,25 +1,38 @@
+:root {
+    --ebony: #4e5340ff;
+    --ebony-2: #697268ff;
+    --cadet-gray: #95a3a4ff;
+    --columbia-blue: #b7d1daff;
+    --alabaster: #e2e8ddff;
+
+    --btn-bg: var(--cadet-gray);
+    --btn-text: var(--alabaster);
+    --btn-hover: var(--columbia-blue);
+    --btn-active: var(--ebony-2);
+    --btn-shadow: rgba(0, 0, 0, 0.2);
+}
+
 html, body {
     display: flex;
     flex: 1;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-color: #494949;
+    background-color: var(--ebony);
+    font-family: "Montserrat", sans-serif;
 }
 
 header {
-    background-color: #466a83;
+    background-color: var(--ebony-2);
 }
 
 h1 {
     text-align: center;
-    color:#FFFBDE;
-    text-shadow: 2px 2px #040404;
+    color: var(--alabaster);
 }
 
-
 .container {
-    border-top: solid 5px #4682A9;
+    border-top: solid 1px var(--cadet-gray);
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -27,34 +40,35 @@ h1 {
     gap: 10px;
 }
 
-
 .grid {
     display: flex;
     flex-wrap: wrap;
-    border: 5px outset #91C8E4;
+    border: 2px solid var(--columbia-blue);
+    border-radius: 10px;
     width: 500px;
     height: 500px;
-    background-color: rgb(236, 246, 255);
-
+    background-color: var(--alabaster);
+    box-shadow: 0 2px 8px var(--btn-shadow);
+    overflow: hidden;
 }
 
-
-Button {
-    padding: 5px 12px;
-	margin: 5px;
-	border-radius: 10px;
-	color: #FFFBDE;
-    background-color: #749BC2;
-	font-weight: bold;
+button {
+    padding: 10px 18px;
+    margin: 6px;
+    border-radius: 12px;
+    border: none;
+    color: var(--btn-text);
+    background-color: var(--btn-bg);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 6px var(--btn-shadow);
+    transition: 0.2s ease;
 }
 
-
-Button:hover {
-	background-color: #91C8E4;
-	transition: 0.1s;
+button:hover {
+    background-color: var(--btn-hover);
 }
 
-Button:active {
-	background-color: #4682A9;
+button:active {
+    background-color: var(--btn-active);
 }
-
